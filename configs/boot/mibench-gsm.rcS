@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /benchmarks
+/sbin/m5 resetstats
+/sbin/m5 checkpoint
+/sbin/m5 dumpstats 
+./a.out
+/sbin/m5 exit
